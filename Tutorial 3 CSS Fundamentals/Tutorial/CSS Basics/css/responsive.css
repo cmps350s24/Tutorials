@@ -1,0 +1,18 @@
+.box {
+    width: 20px;
+    height: 20px;
+    background-color: aqua;
+    margin: 10px;
+    border: 1px solid green;
+    padding: 20px;
+
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    outline: auto;
+    height: 500px;
+    justify-content: space-around;
+    align-items: start;
+}

@@ -1,0 +1,75 @@
+/* Universal selector */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Type [Element] Selectors */
+
+main {
+    background-color: aqua;
+    padding: 10px;
+}
+
+footer {
+    background-color: red;
+    color: white;
+    height: 40px;
+    text-align: center;
+}
+
+
+
+
+/* Third way [class] selectors */
+.title {
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+
+/* ID Selector */
+#section1 {
+    background-color: bisque;
+}
+
+/* Mix this */
+/* Descendants */
+main p {
+    padding: 10px;
+    text-transform: capitalize;
+    /* background-color: brown; */
+}
+
+/* Direct child */
+div>h2 {
+    background-color: brown;
+}
+
+h2~article {
+    font-size: larger;
+    color: yellow;
+}
+
+/* direct sibling is an article */
+
+h2+article {
+    font-size: larger;
+    color: red;
+}
+
+/* OR */
+header,
+footer {
+    background-color: brown;
+    color: yellowgreen;
+    padding: 20px;
+}
+
+
+/* AND */
+div.title {
+    border: 10px solid orange;
+}

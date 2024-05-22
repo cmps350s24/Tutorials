@@ -1,0 +1,93 @@
+:root {
+    --text-color: #f1f7f7;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--text-color)
+}
+
+.header {
+    background-color: rgb(13, 133, 133);
+    /* height: 80px; */
+    grid-area: header;
+}
+
+
+.nav {
+    background-color: rgb(99, 144, 144);
+
+    grid-area: nav;
+}
+
+.main {
+    background-color: rgb(128, 0, 255);
+    padding: 1rem;
+    outline: 2px solid white;
+    margin: 1rem;
+
+    display: flex;
+    gap: 1rem;
+
+    /* name it */
+
+    grid-area: main;
+
+}
+
+.section {
+    background-color: rgb(157, 255, 0);
+    flex: 5;
+    grid-area: section;
+    height: 100%;
+
+}
+
+.aside {
+    background-color: rgb(255, 72, 0);
+    flex: 1;
+    grid-area: aside;
+}
+
+.footer {
+    background-color: rgb(255, 0, 255);
+    grid-area: footer;
+}
+
+.sub-section {
+    display: flex;
+    color: blue;
+    outline: auto;
+    gap: 0.2rem;
+    margin: 1rem;
+    padding: 1rems;
+}
+
+.container {
+    height: 80vh;
+    outline: auto;
+    margin: 0.2rem;
+    padding: 0.3rem;
+}
+
+/* big screen more complexity */
+@media screen and (min-width : 600px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        grid-template-rows: auto auto 1fr auto;
+        gap: 0.2rem;
+        grid-template-areas:
+            'header header'
+            'nav nav'
+            'aside section'
+            'footer footer'
+        ;
+
+    }
+}

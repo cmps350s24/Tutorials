@@ -1,0 +1,36 @@
+/* pseudo elements */
+
+section h2::before {
+    content: ">";
+    background-color: brown;
+}
+
+/* Pseudo classes */
+nav li:hover {
+    background-color: antiquewhite;
+}
+
+input:required {
+    background-color: green;
+}
+
+input:focus {
+    background-color: red;
+}
+
+input:disabled {
+    background-color: gray;
+}
+
+/* select using attributes */
+input[type=email] {
+    border: 4px solid;
+}
+
+li:nth-child(2n) {
+    background-color: gray;
+}
+
+li:not(.g) {
+    background-color: brown;
+}
